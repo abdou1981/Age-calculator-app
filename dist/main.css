@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 86%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  border-bottom: 2px solid hsl(0, 0%, 94%);
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .form {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+.form-input {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .form-input {
+    width: 22%;
+  }
+}
+.form-input label {
+  color: hsl(0, 1%, 44%);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.form-input input {
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.form-input input[value] {
+  font-size: 18px;
+  font-weight: 800;
+}
+.form-input .req, .form-input .whole, .form-input .inva-month, .form-input .inva-day {
+  font-size: 10px;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+.form .submit {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: calc(50% - 25px);
+  bottom: -25px;
+}
+@media (min-width: 768px) {
+  .form .submit {
+    right: 0;
+  }
+}
+.form .submit img {
+  width: 30px;
+}
+.form .submit:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.box {
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .box {
+    width: 600px;
+    padding: 30px;
+  }
+}
+
+.result {
+  margin-top: 50px;
+  font-size: 45px;
+}
+.result span {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=main.css.map */

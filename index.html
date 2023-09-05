@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Age calculator app</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="dist/main.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="box">
+      <div class="form">
+        <div class="form-input">
+          <label>Day</label>
+          <input id="day" type="text" placeholder="DD" value="">
+          <p class="req">The fieled is required</p>
+          <p class="inva-day">Most be a valid day</p>
+        </div>
+        <div class="form-input">
+          <label>Month</label>
+          <input id="month" type="text" placeholder="MM" value="">
+          <p class="req">The fieled is required</p>
+          <p class="inva-month">Most be a valid month</p>
+        </div>
+        <div class="form-input">
+          <label>Year</label>
+          <input id="year" type="text" placeholder="YYYY" value="">
+          <p class="req">The fieled is required</p>
+          <p class="whole">Most be in the past</p>
+        </div class="form-input">
+        <div class="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+        </div>
+      </div>
+      <div class="result">
+        <p class="years"><span>--</span> years</p>
+        <p class="months"><span>--</span> months</p>
+        <p class="days"><span>--</span> days</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

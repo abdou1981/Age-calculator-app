@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.box {
+  @include breakpoint(Desktop) {
+    width: 600px;
+    padding: 30px;
+  }
+  background-color: $White;
+  width: 300px;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+  padding: 20px;
+}
